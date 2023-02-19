@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido a Harbour 60, un restaurante con buen prestigio, te invitamos a consultar nuestra reeservas y servicios.">
+    <title>Harbour 60</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body class="bg-orange-50">
+    <main class="bg-[url('img/img_index/img_header.jpg')] bg-center br-no-repeat bg-cover h-screen">
+        <header>
+            <nav id="nav" class="fixed flex flex-col lg:flex-row items-center justify-between w-full px-6 pt-2">
+                <div>
+                    <div><img id="logo" class="w-56 pt-4"></div>
+                </div>
+                <div>
+                    <ul id="menu" class="text-orange-100 flex text-md sm:text-xl font-bold">
+                        <li id="inicio" class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="index.html">Inicio</a></li>
+                        <div class="flex flex-col relative">
+                            <div id="menus">
+                                <li class=" border-dotted border-b-2 mx-3 border-orange-100"><a href="">Menus</a></li>
+                            </div> 
+                            <div id="submenus" class="absolute top-0 left-3 text-md mt-9 hover:block rounded">
+                                <ul class="flex flex-col">
+                                    <li id="opt1" class="text-base w-20 text-center border-2 border-orange-100"><a href="menus.html">Adultos</a></li>
+                                    <li id="opt2" class="text-base w-20 text-center border-2 border-orange-100"><a href="menus.html">Infantil</a></li>
+                                    <li id="opt3" class="text-base w-20 text-center border-2 border-orange-100"><a href="menus.html">Grupos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <li id="reserva" class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="reserva.html">Reservar</a></li>
+                        <li class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="contacto.html">Contactar</a></li>
+                        <li class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="carta.html">A la carta</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="flex flex-col h-screen justify-center items-center">
+                <div><h1 class="px-10 text-center text-orange-100 text-6xl mb-5">Bienvenidos a Harbour 60</h1></div>
+                <div><button class="text-orange-100 text-xl br-transoparent border-2 w-44 h-12 font-bold hover:border-orange-100 hover:bg-orange-100 hover:text-black">Reservar ahora</button></div>
+            </div>
+            
+        </header>
+        <section>
+            <h3 class="text-cyan-800 text-2xl font-bold text-center mb-8 mt-20">Lo mejor se establecio aqui.</h3>
+            <p class="w-3/4 m-auto text-center leading-8 text-lg font-bold text-cyan-800 mb-20 xl:px-20 2xl:px-36">Ubicado en una vibrante calle comercial peatonal, ofrecemos es un espacio amplio y luminoso con una fachada acristalada en dos lados y una terraza exterior en el mercado. Nuestro estilo es abierto, relajado y amistoso, y ofrecemos nuestro exclusivo desayuno para viajeros y menús de alimentos y bebidas durante todo el día, junto con nuestro café recién tostado de la tostaduría caravan. ¡Ven a tomar un café con el periódico de la mañana, un cóctel y platos pequeños por la noche y cualquier cosa intermedia!</p>
+        </section>
+        
+        <section>
+            <div class="bg-[url('img/img_index/reservar-eventos.jpg')] w-full m-auto bg-center br-no-repeat bg-cover" style="height: 600px;">
+                <div class="text-orange-100 w-80 h-96 bg-cyan-800 float-right mt-28 mr-36 rounded px-10 py-5 xl:w-96 xl:mr-52">
+                    <h3 class="text-3xl font-bold">Reserva</h3>
+                    <h3 class="text-3xl font-bold">Eventos y</h3>
+                    <h3 class="text-3xl font-bold xl:mb-3">Fiestas</h3>
+                    <p class="text-lg pb-5">El lugar adecuado tanto para tu pausa para comer como para una cena con amigos. Nuestro acogedor comedor es el lugar perfecto para eventos privados.</p>
+                    <button class="text-orange-100 text-xl br-transoparent border-2 border-dotted w-44 h-12 font-bold hover:border-orange-100 hover:bg-orange-100 hover:text-black">Reservar ahora</button></div>
+                </div>
+            </div>
+
+            <div class="bg-[url('img/img_index/servicio-de-envio.jpg')] w-full m-auto bg-center br-no-repeat bg-cover" style="height: 600px;">
+                <div class="text-orange-100 w-80 h-96 bg-cyan-800 float-left mt-28 ml-36 rounded px-10 py-5  xl:w-96 xl:ml-52">
+                    <h3 class="text-3xl font-bold">La mejor</h3>
+                    <h3 class="text-3xl font-bold">Comida a</h3>
+                    <h3 class="text-3xl font-bold xl:mb-3">Un click</h3>
+                    <p class="text-lg pb-5">Ahora los mejor de dos mundos, con la posibilidad de llevar tu menu favorito a la comodidad de tu hogar.</p>
+                    <button class="text-orange-100 text-xl br-transoparent border-2 border-dotted w-44 h-12 font-bold hover:border-orange-100 hover:bg-orange-100 hover:text-black">Ordenar ahora</button></div>
+                </div>
+            </div>
+        </section>
+        <footer class="text-orange-100 bg-black flex justify-evenly px-4 py-10 flex-wrap xl:px-72">
+            <div class="mx-2">
+                <h3 class="text-2xl font-bold mb-3">ACERCA DE</h3>
+                <ul class="pl-2">
+                    <li>El acuerdo real</li>
+                    <li>Nuestra historia</li>
+                    <li>El equipo</li>
+                    <li>Carreras</li>
+                    <li>Mercancias</li>
+                </ul>
+            </div>
+            <div class="mx-2">
+                <h3 class="text-2xl font-bold mb-3">MENUS</h3>
+                <ul class="pl-2">
+                    <li>Almuerzo</li>
+                    <li>Cena</li>
+                    <li>Postres</li>
+                    <li>Bebidas</li>
+                    <li>Niños</li>
+                </ul>
+            </div>
+            <div class="mx-2">
+                <h3 class="text-2xl font-bold mb-3">CONTACTO</h3>
+                <ul class="pl-2">
+                    <li>Cuartos privados</li>
+                    <li>Tarjeta de regalo</li>
+                    <li>Reservas</li>
+                    <li>Contactenos</li>
+                </ul>
+            </div>
+            <div class="mx-2">
+                <div>
+                    <h3 class="text-2xl font-bold mb-3">LLAMENOS</h3>
+                    (506) 2663 5164
+                </div>
+                <br>
+                <div>
+                    <h3 class="text-2xl font-bold mb-3">SIGANOS</h3> 
+                    <ul class="flex justify-between items-center">
+                        <li><img class="w-7" src="img/img_index/facebook.png" alt=""></li>
+                        <li><img class="w-7" src="img/img_index/instagram.png" alt=""></li>
+                        <li><img class="w-7" src="img/img_index/pinterest.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="src/main.js"></script>
+</body>
+</html>
+
+<!--bg-cyan-800 azul-->
+<!--bg-orange-100 beige-->
+

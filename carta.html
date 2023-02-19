@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Escoge entre una variedd de comidas para poder hacer tu menu ideal.">
+    <title>Productos a la carta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body class="bg-orange-50">
+    <main class="bg-[url('img/img_contacto/contacto.jpg')] br-no-repeat bg-cover h-screen bg-center">
+        <header>
+            <nav id="nav" class="fixed flex flex-col lg:flex-row items-center justify-between w-full px-6 pt-2">
+                <div>
+                    <div><img id="logo" class="w-56 pt-4"></div>
+                </div>
+                <div>
+                    <ul id="menu" class="text-orange-100 flex text-md sm:text-xl font-bold">
+                        <li id="inicio" class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="index.html">Inicio</a></li>
+                        <div class="flex flex-col relative">
+                            <div id="menus">
+                                <li class=" border-dotted border-b-2 mx-3 border-orange-100"><a href="">Menus</a></li>
+                            </div> 
+                            <div id="submenus" class="absolute top-0 left-3 text-md mt-9 hover:block rounded">
+                                <ul class="flex flex-col">
+                                    <li id="opt1" class="text-base w-20 text-center border-2 border-orange-100"><a href="menus.html">Adultos</a></li>
+                                    <li id="opt2" class="text-base w-20 text-center border-2 border-orange-100"><a href="menus.html">Infantil</a></li>
+                                    <li id="opt3" class="text-base w-20 text-center border-2 border-orange-100"><a href="menus.html">Grupos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <li id="reserva" class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="reserva.html">Reservar</a></li>
+                        <li class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="contacto.html">Contactar</a></li>
+                        <li class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="carta.html">A la carta</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="flex flex-col h-screen justify-center items-center">
+                <div><h1 class="px-10 text-center text-orange-100 text-8xl mb-5">A la carta</h1></div>
+            </div>
+            
+        </header>
+
+
+        <section class="pt-24 px-0 md-20 xl:px-40 flex justify-evenly items-start text-cyan-800 flex-wrap">
+
+            <div class="w-11/12 xl:w-3/4 flex flex-col justify-center mb-20">
+                <div class="flex justify-between">
+                    <div class="flex"><p id="op1" class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer" >Alitas de pollo</p>     <p id="op2" class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer">Papas Fritas</p>     <p id="op3" class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer">Quesadillas</p></div>
+                    <div><p class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer bg-orange-400" >Entradas</p></div>
+                </div>
+                <div class="border-2 border-cyan-900 border-dashed rounded-br-xl rounded-bl-xl w-full">
+                    <div id="img1" class="br-no-repeat bg-cover h-screen bg-center w-full h-1/2 rounded-br-xl rounded-bl-xl bg-[url('img/img_carta/entrada/alitas.png')]" style="height: 400px;"></div>
+                    <div class="text-xl font-bold text-orange-500 flex justify-between px-4 pt-4 pb-2 pr-12"><h3 id="title1">ALITAS DE POLLO</h3><p>$<span class="border-b-4 border-orange-400" id="price1">5</span></p></div>
+                    <div id="des1" class="text-xl font-bold px-4 pb-2">Mezclado con su elección de Buffalo suave o picante, bourbon de nogal, Nashville picante, frote de chile y lima, ajo parmesano o salsa BBQ.</div>
+                    
+                </div>
+            </div>
+
+
+            <div class="w-11/12 xl:w-3/4 flex flex-col justify-center mb-20">
+                <div class="flex justify-between">
+                    <div class="flex"><p id="op4" class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer" >Brochetas</p>     <p id="op5" class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer">Costillitas</p>     <p id="op6" class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer">Ribeye</p></div>
+                    <div><p class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer bg-orange-400" >Fuerte</p></div>
+                </div>
+                <div class="border-2 border-cyan-900 border-dashed rounded-br-xl rounded-bl-xl w-full">
+                    <div id="img2" class="br-no-repeat bg-cover h-screen bg-center w-full h-1/2 rounded-br-xl rounded-bl-xl bg-[url('img/img_carta/fuerte/brochetas.jpg')]" style="height: 400px;"></div>
+                    <div class="text-xl font-bold text-orange-500 flex justify-between px-4 pt-4 pb-2 pr-12"><h3 id="title2">BROCHETAS DECONSTRUIDAS</h3><p>$<span class="border-b-4 border-orange-400" id="price2">10</span></p></div>
+                    <div id="des2" class="text-xl font-bold px-4 pb-2">Puntas de res a la parrilla con calabacín a la parrilla, pimientos y cebolla roja. Servido sobre arroz pilaf.</div>
+                    
+                </div>
+            </div>
+
+
+
+            <div class="w-11/12 xl:w-3/4 flex flex-col justify-center mb-20">
+                <div class="flex justify-between">
+                    <div class="flex"><p id="op7" class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer" >Trata de Queso</p>     <p id="op8" class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer">Pastel de lava</p>     <p id="op9" class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer">Chocopastel</p></div>
+                    <div><p class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer bg-orange-400" >Postre</p></div>
+                </div>
+                <div class="border-2 border-cyan-900 border-dashed rounded-br-xl rounded-bl-xl w-full">
+                    <div id="img3" class="br-no-repeat bg-cover h-screen bg-center w-full h-1/2 rounded-br-xl rounded-bl-xl bg-[url('img/img_carta/postre/tarta.png')]" style="height: 400px;"></div>
+                    <div class="text-xl font-bold text-orange-500 flex justify-between px-4 pt-4 pb-2 pr-12"><h3 id="title3">TARTA DE QUESO NUEVA YORK</h3><p>$<span class="border-b-4 border-orange-400" id="price3">8</span></p></div>
+                    <div id="des3" class="text-xl font-bold px-4 pb-2">Espeso, rico y cremoso. Cubierto con una generosa manta de jugosas fresas.</div>
+                    
+                </div>
+            </div>
+
+
+
+            <div class="w-11/12 xl:w-3/4 flex flex-col justify-center mb-20">
+                <div class="flex justify-between">
+                    <div class="flex"><p id="op10" class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer" >Sprite</p>     <p id="op11" class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer">Coca Cola</p>     <p id="op12" class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer">Fanta</p></div>
+                    <div><p class="border-2 rounded-tr-xl rounded-tl-xl border-cyan-900 font-bold p-1 cursor-pointer bg-orange-400" >Bebidas</p></div>
+                </div>
+                <div class="border-2 border-cyan-900 border-dashed rounded-br-xl rounded-bl-xl w-full">
+                    <div id="img4" class="br-no-repeat bg-cover h-screen bg-center w-full h-1/2 rounded-br-xl rounded-bl-xl bg-[url('img/img_carta/bebida/sprite.jpg')]" style="height: 400px;"></div>
+                    <div class="text-xl font-bold text-orange-500 flex justify-between px-4 pt-4 pb-2 pr-12"><h3 id="title4">SPRITE</h3><p>$<span class="border-b-4 border-orange-400" id="price4">4</span></p></div>
+                    <div id="des4" class="text-xl font-bold px-4 pb-2">Bebida naturalmente refrescante por su ausencia de aromas artificiales, colorantes y conservantes.</div>
+                    
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="flex">
+            <a class="m-auto text-center border-2 border-orange-400 bg-orange-300 py-2 px-4 text-cyan-800 text-xl font-bold mb-20" id="enlace" href="">Total a Pagar $<span id="priceenlace"></span></a>
+        </div>
+
+        <footer class="text-orange-100 bg-black flex justify-evenly px-4 py-10 flex-wrap xl:px-72">
+            <div class="mx-2">
+                <h3 class="text-2xl font-bold mb-3">ACERCA DE</h3>
+                <ul class="pl-2">
+                    <li>El acuerdo real</li>
+                    <li>Nuestra historia</li>
+                    <li>El equipo</li>
+                    <li>Carreras</li>
+                    <li>Mercancias</li>
+                </ul>
+            </div>
+            <div class="mx-2">
+                <h3 class="text-2xl font-bold mb-3">MENUS</h3>
+                <ul class="pl-2">
+                    <li>Almuerzo</li>
+                    <li>Cena</li>
+                    <li>Postres</li>
+                    <li>Bebidas</li>
+                    <li>Niños</li>
+                </ul>
+            </div>
+            <div class="mx-2">
+                <h3 class="text-2xl font-bold mb-3">CONTACTO</h3>
+                <ul class="pl-2">
+                    <li>Cuartos privados</li>
+                    <li>Tarjeta de regalo</li>
+                    <li>Reservas</li>
+                    <li>Contactenos</li>
+                </ul>
+            </div>
+            <div class="mx-2">
+                <div>
+                    <h3 class="text-2xl font-bold mb-3">LLAMENOS</h3>
+                    (506) 2663 5164
+                </div>
+                <br>
+                <div>
+                    <h3 class="text-2xl font-bold mb-3">SIGANOS</h3> 
+                    <ul class="flex justify-between items-center">
+                        <li><img class="w-7" src="img/img_index/facebook.png" alt=""></li>
+                        <li><img class="w-7" src="img/img_index/instagram.png" alt=""></li>
+                        <li><img class="w-7" src="img/img_index/pinterest.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="src/main.js"></script>
+    
+
+    <script>
+        let img1 = document.getElementById('img1')
+        let des1 = document.getElementById('des1')
+        let title1 = document.getElementById('title1')
+        let price1 = document.getElementById('price1')
+        let op1 = document.getElementById('op1')
+        let op2 = document.getElementById('op2')
+        let op3 = document.getElementById('op3')
+        let precio1 = 0
+        let enlace = document.getElementById('enlace')
+        let priceenlace = document.getElementById('priceenlace')
+        
+
+        enlace.href
+        op1.addEventListener('click', () => {
+            img1.classList.add("bg-[url('img/img_carta/entrada/alitas.png')]")
+            img1.classList.remove("bg-[url('img/img_carta/entrada/papas.jpg')]")
+            img1.classList.remove("bg-[url('img/img_carta/entrada/quesadilla.jpg')]")
+            des1.textContent = 'Mezclado con su elección de Buffalo suave o picante, bourbon de nogal, Nashville picante, frote de chile y lima, ajo parmesano o salsa BBQ.'
+            price1.textContent = 5
+            title1.textContent = 'ALITAS DE POLLO'
+            precio1 = parseInt(price1.textContent)
+
+            total = precio1 + precio2 + precio3 + precio4
+            priceenlace.textContent = total
+            enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+        })
+        op2.addEventListener('click', () => {
+            img1.classList.add("bg-[url('img/img_carta/entrada/papas.jpg')]")
+            img1.classList.remove("bg-[url('img/img_carta/entrada/alitas.png')]")
+            img1.classList.remove("bg-[url('img/img_carta/entrada/quesadilla.jpg')]")
+            des1.textContent = 'Cubierto con queso rallado, tocino, cebolletas, rociado con queso cheddar y rancho al costado.'
+            price1.textContent = 7
+            title1.textContent = 'PAPAS FRITAS CARGADAS DE QUESO'
+            precio1 = parseInt(price1.textContent)
+
+            total = precio1 + precio2 + precio3 + precio4
+            priceenlace.textContent = total
+            enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+        })
+        op3.addEventListener('click', () => {
+            img1.classList.add("bg-[url('img/img_carta/entrada/quesadilla.jpg')]")
+            img1.classList.remove("bg-[url('img/img_carta/entrada/alitas.png')]")
+            img1.classList.remove("bg-[url('img/img_carta/entrada/papas.jpg')]")
+            des1.textContent = 'Pollo ennegrecido, queso cheddar derretido, tomates y cebolletas en una tortilla a la parrilla. Servido con guacamole, crema agria y pico de gallo.'
+            price1.textContent = 7
+            title1.textContent = 'QUESADILLAS DE POLLO'
+            precio1 = parseInt(price1.textContent)
+
+            total = precio1 + precio2 + precio3 + precio4
+            priceenlace.textContent = total
+            enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+        })
+
+
+        let total = 0
+        let img2 = document.getElementById('img2')
+        let des2 = document.getElementById('des2')
+        let title2 = document.getElementById('title2')
+        let price2 = document.getElementById('price2')
+        let op4 = document.getElementById('op4')
+        let op5 = document.getElementById('op5')
+        let op6 = document.getElementById('op6')
+        let precio2 = 0
+
+        op4.addEventListener('click', () => {
+            img2.classList.add("bg-[url('img/img_carta/fuerte/brochetas.jpg')]")
+            img2.classList.remove("bg-[url('img/img_carta/fuerte/ribeye.jpg')]")
+            img2.classList.remove("bg-[url('img/img_carta/fuerte/costillitas.jpg')]")
+            des2.textContent = 'Puntas de res a la parrilla con calabacín a la parrilla, pimientos y cebolla roja. Servido sobre arroz pilaf.'
+            price2.textContent = '10'
+            title2.textContent = 'BROCHETAS DECONSTRUIDAS'
+            precio2 = parseInt(price2.textContent)
+
+            total = precio1 + precio2 + precio3 + precio4
+            priceenlace.textContent = total
+            enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+        })
+        op5.addEventListener('click', () => {
+            img2.classList.add("bg-[url('img/img_carta/fuerte/costillitas.jpg')]")
+            img2.classList.remove("bg-[url('img/img_carta/fuerte/brochetas.jpg')]")
+            img2.classList.remove("bg-[url('img/img_carta/fuerte/ribeye.jpg')]")
+            des2.textContent = 'Se cocinan a fuego lento durante horas hasta que se desprenden del hueso. Elija entre: BBQ clásica, Nashville hot y hickory bourbon.'
+            price2.textContent = '12'
+            title2.textContent = 'COSTILLITAS BABY BACK'
+            precio2 = parseInt(price2.textContent)
+
+            total = precio1 + precio2 + precio3 + precio4
+            priceenlace.textContent = total
+            enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+        })
+        op6.addEventListener('click', () => {
+            img2.classList.add("bg-[url('img/img_carta/fuerte/ribeye.jpg')]")
+            img2.classList.remove("bg-[url('img/img_carta/fuerte/brochetas.jpg')]")
+            img2.classList.remove("bg-[url('img/img_carta/fuerte/costillitas.jpg')]")
+            des2.textContent = '6 oz o 12 oz de costilla sellada cubierta con mantequilla con especias cajún. Servido con una patata al horno.'
+            price2.textContent = '11'
+            title2.textContent = 'RIBEYE CAJÚN'
+            precio2 = parseInt(price2.textContent)
+
+            total = precio1 + precio2 + precio3 + precio4
+            priceenlace.textContent = total
+            enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+        })
+
+
+
+        let img3 = document.getElementById('img3')
+        let des3 = document.getElementById('des3')
+        let title3 = document.getElementById('title3')
+        let price3 = document.getElementById('price3')
+        let op7 = document.getElementById('op7')
+        let op8 = document.getElementById('op8')
+        let op9 = document.getElementById('op9')
+        let precio3 = 0
+
+        op7.addEventListener('click', () => {
+            img3.classList.add("bg-[url('img/img_carta/postre/tarta.png')]")
+            img3.classList.remove("bg-[url('img/img_carta/postre/chocolate.jpg')]")
+            img3.classList.remove("bg-[url('img/img_carta/postre/pastel.png')]")
+            des3.textContent = 'Espeso, rico y cremoso. Cubierto con una generosa manta de jugosas fresas.'
+            price3.textContent = '7'
+            title3.textContent = 'TARTA DE QUESO NUEVA YORK'
+            precio3 = parseInt(price3.textContent)
+
+            total = precio1 + precio2 + precio3 + precio4
+            priceenlace.textContent = total
+            enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+        })
+        op8.addEventListener('click', () => {
+            img3.classList.add("bg-[url('img/img_carta/postre/pastel.png')]")
+            img3.classList.remove("bg-[url('img/img_carta/postre/tarta.png')]")
+            img3.classList.remove("bg-[url('img/img_carta/postre/chocolate.jpg')]")
+            des3.textContent = 'Pastel tibio de chocolate con centro de chocolate amargo cubierto con helado de vainilla, migas de galleta Oreo®.'
+            price3.textContent = '5'
+            title3.textContent = 'PASTEL DE LAVA DE CHOCOLATE'
+            precio3 = parseInt(price3.textContent)
+
+            total = precio1 + precio2 + precio3 + precio4
+            priceenlace.textContent = total
+            enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+        })
+        op9.addEventListener('click', () => {
+            img3.classList.add("bg-[url('img/img_carta/postre/chocolate.jpg')]")
+            img3.classList.remove("bg-[url('img/img_carta/postre/pastel.png')]")
+            img3.classList.remove("bg-[url('img/img_carta/postre/tarta.png')]")
+            des3.textContent = 'Capas decadentes de mousse de chocolate, corteza de galleta de chocolate y ganache.'
+            price3.textContent = '6'
+            title3.textContent = 'PASTEL DE CHOCOLATE DEFINITIVO'
+            precio3 = parseInt(price3.textContent)
+
+            total = precio1 + precio2 + precio3 + precio4
+            priceenlace.textContent = total
+            enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+        })
+
+
+
+        let img4 = document.getElementById('img4')
+        let des4 = document.getElementById('des4')
+        let title4 = document.getElementById('title4')
+        let price4 = document.getElementById('price4')
+        let op10 = document.getElementById('op10')
+        let op11 = document.getElementById('op11')
+        let op12 = document.getElementById('op12')
+        let precio4 = 0
+
+        op10.addEventListener('click', () => {
+            img4.classList.add("bg-[url('img/img_carta/bebida/sprite.jpg')]")
+            img4.classList.remove("bg-[url('img/img_carta/bebida/coca.jpg')]")
+            img4.classList.remove("bg-[url('img/img_carta/bebida/fanta.jpg')]")
+            des4.textContent = 'Bebida naturalmente refrescante por su ausencia de aromas artificiales, colorantes y conservantes.'
+            price4.textContent = '4'
+            title4.textContent = 'SPRITE'
+            precio4 = parseInt(price4.textContent)
+
+            total = precio1 + precio2 + precio3 + precio4
+            priceenlace.textContent = total
+            enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+        })
+        op11.addEventListener('click', () => {
+            img4.classList.add("bg-[url('img/img_carta/bebida/coca.jpg')]")
+            img4.classList.remove("bg-[url('img/img_carta/bebida/fanta.jpg')]")
+            img4.classList.remove("bg-[url('img/img_carta/bebida/sprite.jpg')]")
+            des4.textContent = 'Es un refresco que tiene un gran sabor, de alta calidad, con cero calorías, cero azúcar y baja en sodio.'
+            price4.textContent = '5'
+            title4.textContent = 'COCA-COLA ZERO'
+            precio4 = parseInt(price4.textContent)
+
+            total = precio1 + precio2 + precio3 + precio4
+            priceenlace.textContent = total
+            enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+        })
+        op12.addEventListener('click', () => {
+            img4.classList.add("bg-[url('img/img_carta/bebida/fanta.jpg')]")
+            img4.classList.remove("bg-[url('img/img_carta/bebida/coca.jpg')]")
+            img4.classList.remove("bg-[url('img/img_carta/bebida/sprite.jpg')]")
+            des4.textContent = 'Bebida con zumo de frutas refrescante joven, alegre y extrovertida. Este clásico refresco burbujeante Fanta le ayudará a aplacar rápidamente su sed.'
+            price4.textContent = '6'
+            title4.textContent = 'FANTA NARANJA'
+            precio4 = parseInt(price4.textContent)
+
+            total = precio1 + precio2 + precio3 + precio4
+            priceenlace.textContent = total
+            enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+        })
+
+        precio1 = parseInt(price1.textContent)
+        precio2 = parseInt(price2.textContent)
+        precio3 = parseInt(price3.textContent)
+        precio4 = parseInt(price4.textContent)
+        total = precio1 + precio2 + precio3 + precio4
+        priceenlace.textContent = total
+
+        enlace.setAttribute("href", `agradecimiento.html?precio=${total}`);
+
+    </script> 
+
+
+</body>
+</html>
+
+<!--logo.setAttribute("src", 'img/img_index/logo-zyan.png');-->
+<!--bg-orange-100 beige-->
+

@@ -12,21 +12,27 @@
         body{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
+
+        @media only screen and (max-width: 380px) {
+            #card_reserva{
+                height: 540px !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-orange-50">
     <main class="bg-[url('img/img_reservas/reservas.jpg')] bg-center br-no-repeat bg-cover h-screen">
         <header>
-            <nav id="nav" class="fixed flex flex-col lg:flex-row items-center justify-between w-full px-6 pt-2">
+            <nav id="nav" class="fixed flex flex-col lg:flex-row items-center justify-between w-full px-6 pt-2 max-[470px]:text-sm max-[340px]:text-xs">
                 <div>
                     <a href="index.html"><div><img id="logo" class="w-56 pt-4"></div></a>
                 </div>
                 <div>
                     <ul id="menu" class="text-orange-100 flex text-md sm:text-xl font-bold">
-                        <li id="inicio" class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="index.html">Inicio</a></li>
+                        <li id="inicio" class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100 nav_object"><a href="index.html">Inicio</a></li>
                         <div class="flex flex-col relative">
                             <div id="menus">
-                                <li class=" border-dotted border-b-2 mx-3 border-orange-100"><a href="">Menus</a></li>
+                                <li class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100"><a href="menus.html">Menus</a></li>
                             </div> 
                             <div id="submenus" class="absolute top-0 left-3 text-md mt-9 hover:block rounded">
                                 <ul class="flex flex-col">
@@ -36,14 +42,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <li id="reserva" class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="reserva.html">Reservar</a></li>
-                        <li class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="contacto.html">Contactar</a></li>
-                        <li class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="carta.html">A la carta</a></li>
+                        <li id="reserva" class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100 nav_object"><a href="reserva.html">Reservar</a></li>
+                        <li class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100 nav_object"><a href="contacto.html">Contactar</a></li>
+                        <li class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100 nav_object"><a href="carta.html">Carta</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="flex flex-col h-screen justify-center items-center">
-                <div><h1 class="px-10 text-center text-orange-100 text-8xl mb-5">Reservas</h1></div>
+                <div><h1 class="px-10 text-center text-orange-100 text-8xl mb-5 max-[460px]:text-5xl">Reservas</h1></div>
             </div>
             
         </header>
@@ -52,9 +58,9 @@
         <section class="py-24 items-center text-cyan-800">
             <div class="flex items-center">
                 <div class="hidden lg:block bg-[url('img/img_reservas/img_reservas_1.jpg')] w-1/2 bg-center br-no-repeat bg-cover h-screen" style="height: 500px;"></div>
-                <div class="text-center px-12 flex flex-col items-center w-full lg:w-1/2 border-4 py-8 border-dashed border-cyan-900" style="height: 500px;">
-                    <h3 class="text-3xl font-bold">FIESTAS PEQUEÑAS:</h3>
-                    <h3 class="text-3xl font-bold">13 - 20 personas</h3>
+                <div id="card_reserva" class="text-center px-12 flex flex-col items-center w-full lg:w-1/2 border-4 py-8 border-dashed border-cyan-900 max-[380px]:px-2 max-[380px]:py-2" style="height: 500px;">
+                    <h3 class="text-3xl font-bold max-[482px]:text-xl">FIESTAS PEQUEÑAS:</h3>
+                    <h3 class="text-3xl font-bold max-[482px]:text-xl">13 - 20 personas</h3>
                     <p class="text-lg mt-5">Para una reunión festiva con un pequeño grupo de amigos o colegas.</p>
                     <p class="text-lg">Disponible en los en todas nueustra sedes, entre las 8 am y las 10 pm para el desayuno, el almuerzo o la cena.</p>
                     <div class="flex flex-col w-3/4 text-center ma-auto">
@@ -72,9 +78,9 @@
 
 
             <div class="flex items-center">
-                <div class="text-center px-12 flex flex-col items-center w-full lg:w-1/2 border-4 py-8 border-dashed border-cyan-900" style="height: 500px;">
-                    <h3 class="text-3xl font-bold">COMEDOR SEMI Y PRIVADO:</h3>
-                    <h3 class="text-3xl font-bold">21 - 52 personas</h3>
+                <div id="card_reserva" class="text-center px-12 flex flex-col items-center w-full lg:w-1/2 border-4 py-8 border-dashed border-cyan-900 max-[380px]:px-2 max-[380px]:py-2" style="height: 500px;">
+                    <h3 class="text-3xl font-bold max-[482px]:text-xl">COMEDOR SEMI Y PRIVADO:</h3>
+                    <h3 class="text-3xl font-bold max-[482px]:text-xl">21 - 52 personas</h3>
                     <p class="text-lg mt-5">¡Para una fiesta de personal de todo el equipo para celebrar el año!</p>
                     <p class="text-lg">Comedor semiprivado, todas las ventajas de una cena privada con el ambiente de los restaurantes.</p>
                     <div class="flex flex-col w-3/4 text-center ma-auto">
@@ -94,9 +100,9 @@
 
             <div class="flex items-center">
                 <div class="hidden lg:block bg-[url('img/img_reservas/img_reservas_3.jpg')] w-1/2 bg-center br-no-repeat bg-cover h-screen" style="height: 500px;"></div>
-                <div class="text-center px-12 flex flex-col items-center w-full lg:w-1/2 border-4 py-8 border-dashed border-cyan-900" style="height: 500px;">
-                    <h3 class="text-3xl font-bold">RESERVAR MESA:</h3>
-                    <h3 class="text-3xl font-bold">1 - 4 personas</h3>
+                <div id="card_reserva" class="text-center px-12 flex flex-col items-center w-full lg:w-1/2 border-4 py-8 border-dashed border-cyan-900 max-[380px]:px-2 max-[380px]:py-2" style="height: 500px;">
+                    <h3 class="text-3xl font-bold max-[482px]:text-xl">RESERVAR MESA:</h3>
+                    <h3 class="text-3xl font-bold max-[482px]:text-xl">1 - 4 personas</h3>
                     <p class="text-lg mt-5">Para una salido casual con amigos o familiares</p>
                     <p class="text-lg">Disponible en los en todas nueustra sedes, entre las 8 am y las 10 pm para el desayuno, el almuerzo o la cena.</p>
                     <div class="flex flex-col w-3/4 text-center ma-auto">
@@ -115,7 +121,7 @@
         </section>
         
         
-        <footer class="text-orange-100 bg-black flex justify-evenly px-4 py-10 flex-wrap xl:px-72 sm:w-auto">
+        <footer class="text-orange-100 bg-black flex justify-evenly px-4 py-10 flex-wrap xl:px-72 sm:w-auto max-[320px]:justify-start">
             <div class="mx-2 mb-10 w-5/12 sm:w-auto">
                 <h3 class="text-2xl font-bold mb-3">ACERCA DE</h3>
                 <ul class="pl-2">
@@ -145,8 +151,8 @@
                     <li>Contactenos</li>
                 </ul>
             </div>
-            <div class="mx-2 sm:mb-2 sm:mb-2 w-5/12 sm:w-auto">
-                <div>
+            <div class="mx-2 sm:mb-2 sm:mb-2 w-5/12 sm:w-auto max-[300px]:w-6/12">
+                <div class="max-[320px]:mt-8">
                     <h3 class="text-2xl font-bold mb-3">LLAMENOS</h3>
                     (506) 2663 5164
                 </div>

@@ -12,21 +12,27 @@
         body{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
+
+        @media only screen and (max-width: 370px) {
+            #card_menu{
+                height: 700px !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-orange-50">
     <main class="bg-[url('img/img_menus/menus.jpg')] br-no-repeat bg-cover h-screen bg-bottom">
         <header>
-            <nav id="nav" class="fixed flex flex-col lg:flex-row items-center justify-between w-full px-6 pt-2">
+            <nav id="nav" class="fixed flex flex-col lg:flex-row items-center justify-between w-full px-6 pt-2 max-[470px]:text-sm max-[340px]:text-xs">
                 <div>
                     <a href="index.html"><div><img id="logo" class="w-56 pt-4"></div></a>
                 </div>
                 <div>
                     <ul id="menu" class="text-orange-100 flex text-md sm:text-xl font-bold">
-                        <li id="inicio" class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="index.html">Inicio</a></li>
+                        <li id="inicio" class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100 nav_object"><a href="index.html">Inicio</a></li>
                         <div class="flex flex-col relative">
                             <div id="menus">
-                                <li class=" border-dotted border-b-2 mx-3 border-orange-100"><a href="">Menus</a></li>
+                                <li class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100"><a href="menus.html">Menus</a></li>
                             </div> 
                             <div id="submenus" class="absolute top-0 left-3 text-md mt-9 hover:block rounded">
                                 <ul class="flex flex-col">
@@ -36,14 +42,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <li id="reserva" class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="reserva.html">Reservar</a></li>
-                        <li class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="contacto.html">Contactar</a></li>
-                        <li class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="carta.html">A la carta</a></li>
+                        <li id="reserva" class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100 nav_object"><a href="reserva.html">Reservar</a></li>
+                        <li class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100 nav_object"><a href="contacto.html">Contactar</a></li>
+                        <li class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100 nav_object"><a href="carta.html">Carta</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="flex flex-col h-screen justify-center items-center">
-                <div><h1 class="px-10 text-center text-orange-100 text-8xl mb-5">Menus</h1></div>
+                <div><h1 class="px-10 text-center text-orange-100 text-8xl mb-5 max-[460px]:text-5xl">Menus</h1></div>
             </div>
             
         </header>
@@ -51,11 +57,11 @@
 
         <section class="py-24 flex justify-evenly items-center text-orange-100 flex-wrap">
 
-            <div class="bg-cyan-800 sm:w-7/12 2xl:w-1/4 lg:w-2/5 mb-14 h-96 rounded-2xl flex flex-col items-center py-6 px-7 shadow-2xl shadow-cyan-200 hover:scale-105 duration-200 ease-in-out" style="height: 620px;">
+            <div id="card_menu" class="bg-cyan-800 sm:w-7/12 2xl:w-1/4 lg:w-2/5 mb-14 h-96 rounded-2xl flex flex-col items-center py-6 px-7 shadow-2xl shadow-cyan-200 hover:scale-105 duration-200 ease-in-out" style="height: 620px;">
                 <div><h3 class="text-3xl font-bold mb-3">Menu Adultos</h3></div>
                 <div><p class="text-4xl font-bold text-orange-300">$35</p></div>
                 <div class="w-full">
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Tartar de solomillo de ternera</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">22</p></div>
@@ -63,7 +69,7 @@
                         <div><p class="text-sm">pudín de parmesano yorkshire | pepinillo frito | vino tinto</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Ensalada De Remolacha Asada</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">17</p></div>
@@ -71,7 +77,7 @@
                         <div><p class="text-sm">nueces confitadas | nata cultivada | uvas | vinagreta de limón</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Ostras Beausoleil</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">28</p></div>
@@ -79,7 +85,7 @@
                         <div><p class="text-sm">salsa cóctel de tomate ahumado | reseda de pimienta verde</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Ensalada César Pequeña</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">12</p></div>
@@ -87,7 +93,7 @@
                         <div><p class="text-sm">masa madre | anchoa blanca | reggiano | huevo duro</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Kanpachi hawaiano a la parrilla</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">49</p></div>
@@ -95,7 +101,7 @@
                         <div><p class="text-sm">glaseado de mirin de soja | champiñones tempura</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">queso feta batido</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">16</p></div>
@@ -107,11 +113,11 @@
             </div>
 
 
-            <div class="bg-cyan-800 sm:w-7/12 2xl:w-1/4 lg:w-2/5 mb-14 h-96 rounded-2xl flex flex-col items-center py-6 px-7 shadow-2xl shadow-cyan-200 hover:scale-105 duration-200 ease-in-out" style="height: 620px;">
+            <div id="card_menu" class="bg-cyan-800 sm:w-7/12 2xl:w-1/4 lg:w-2/5 mb-14 h-96 rounded-2xl flex flex-col items-center py-6 px-7 shadow-2xl shadow-cyan-200 hover:scale-105 duration-200 ease-in-out" style="height: 620px;">
                 <div><h3 class="text-3xl font-bold mb-3">Menu Niños</h3></div>
                 <div><p class="text-4xl font-bold text-orange-300">$25</p></div>
                 <div class="w-full">
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Pastel de pudín de caramelo</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">16</p></div>
@@ -119,7 +125,7 @@
                         <div><p class="text-sm">salsa de ron myers | helado de ron con azúcar moreno | cacahuete</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Chocolate & Avellana</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">15</p></div>
@@ -127,7 +133,7 @@
                         <div><p class="text-sm">mousse de chocolate negro | crema de avellanas | caramelo liquido</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Paccheri de foie gras</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">19</p></div>
@@ -135,7 +141,7 @@
                         <div><p class="text-sm">pasta rustichella | avellanas tostadas con grasa de pato</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Sashimi de atún</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">29</p></div>
@@ -143,7 +149,7 @@
                         <div><p class="text-sm">mousse de aguacate | shoyu ahumado "pico" | tobiko</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Hamburguesa doble americana</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">21</p></div>
@@ -151,7 +157,7 @@
                         <div><p class="text-sm">salsa picante | tocino de oso de río | encurtidos dulces</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Pho de vieiras y tuétano</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">34</p></div>
@@ -163,11 +169,11 @@
             </div>
 
 
-            <div class="bg-cyan-800 sm:w-7/12 2xl:w-1/4 lg:w-2/5 mb-14 h-96 rounded-2xl flex flex-col items-center py-6 px-7 shadow-2xl shadow-cyan-200 hover:scale-105 duration-200 ease-in-out" style="height: 620px;">
+            <div id="card_menu" class="bg-cyan-800 sm:w-7/12 2xl:w-1/4 lg:w-2/5 mb-14 h-96 rounded-2xl flex flex-col items-center py-6 px-7 shadow-2xl shadow-cyan-200 hover:scale-105 duration-200 ease-in-out" style="height: 620px;">
                 <div><h3 class="text-3xl font-bold mb-3">Menu Grupos</h3></div>
                 <div><p class="text-4xl font-bold text-orange-300">$75</p></div>
                 <div class="w-full">
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Hamachi Crudo</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">25</p></div>
@@ -175,7 +181,7 @@
                         <div><p class="text-sm">espuma de coco | condimento de manzana y lima</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Camarones Crujientes Y Calamares</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">26</p></div>
@@ -183,7 +189,7 @@
                         <div><p class="text-sm">salsa dulce de chile tailandés</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Langosta de Maine "Paella"</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">33</p></div>
@@ -191,7 +197,7 @@
                         <div><p class="text-sm">socarrat de arroz | alioli de azafrán | galleta de calamar</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Ensalada De Remolacha Asada</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">17</p></div>
@@ -199,7 +205,7 @@
                         <div><p class="text-sm">nueces confitadas | nata cultivada | vinagreta de limón</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Ensalada De Pollo Glaseada</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">24</p></div>
@@ -207,7 +213,7 @@
                         <div><p class="text-sm">crocante de tocino y almendras ahumadas</p></div>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 max-[370px]:mt-2">
                         <div class="flex justify-between border-b-2 border-dashed border-orange-300">
                             <div><h4 class="text-lg font-bold">Tacos de mahi mahi tempura</h4></div>
                             <div><p class="text-lg font-bold text-orange-300">29</p></div>
@@ -221,7 +227,7 @@
         </section>
         
         
-        <footer class="text-orange-100 bg-black flex justify-evenly px-4 py-10 flex-wrap xl:px-72 sm:w-auto">
+        <footer class="text-orange-100 bg-black flex justify-evenly px-4 py-10 flex-wrap xl:px-72 sm:w-auto max-[320px]:justify-start">
             <div class="mx-2 mb-10 w-5/12 sm:w-auto">
                 <h3 class="text-2xl font-bold mb-3">ACERCA DE</h3>
                 <ul class="pl-2">
@@ -251,8 +257,8 @@
                     <li>Contactenos</li>
                 </ul>
             </div>
-            <div class="mx-2 sm:mb-2 sm:mb-2 w-5/12 sm:w-auto">
-                <div>
+            <div class="mx-2 sm:mb-2 sm:mb-2 w-5/12 sm:w-auto max-[300px]:w-6/12">
+                <div class="max-[320px]:mt-8">
                     <h3 class="text-2xl font-bold mb-3">LLAMENOS</h3>
                     (506) 2663 5164
                 </div>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Si tienes alguna duda referente a disponibilidad, menus, servicios o como usar nuestra plataforma, envianos un formulario para poder atenderte.">
     <title>Contacta con nosotros</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/img_index/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body{
@@ -16,16 +17,16 @@
 <body class="bg-orange-50">
     <main class="bg-[url('img/img_contacto/contacto.jpg')] br-no-repeat bg-cover h-screen bg-center">
         <header>
-            <nav id="nav" class="fixed flex flex-col lg:flex-row items-center justify-between w-full px-6 pt-2">
+            <nav id="nav" class="fixed flex flex-col lg:flex-row items-center justify-between w-full px-6 pt-2 max-[470px]:text-sm max-[340px]:text-xs">
                 <div>
-                    <div><img id="logo" class="w-56 pt-4"></div>
+                    <a href="index.html"><div><img id="logo" class="w-56 pt-4"></div></a>
                 </div>
                 <div>
                     <ul id="menu" class="text-orange-100 flex text-md sm:text-xl font-bold">
-                        <li id="inicio" class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="index.html">Inicio</a></li>
+                        <li id="inicio" class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100 nav_object"><a href="index.html">Inicio</a></li>
                         <div class="flex flex-col relative">
                             <div id="menus">
-                                <li class=" border-dotted border-b-2 mx-3 border-orange-100"><a href="">Menus</a></li>
+                                <li class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100"><a href="menus.html">Menus</a></li>
                             </div> 
                             <div id="submenus" class="absolute top-0 left-3 text-md mt-9 hover:block rounded">
                                 <ul class="flex flex-col">
@@ -35,38 +36,38 @@
                                 </ul>
                             </div>
                         </div>
-                        <li id="reserva" class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="reserva.html">Reservar</a></li>
-                        <li class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="contacto.html">Contactar</a></li>
-                        <li class=" border-dotted border-b-2 mx-3 border-orange-100 nav_object"><a href="carta.html">A la carta</a></li>
+                        <li id="reserva" class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100 nav_object"><a href="reserva.html">Reservar</a></li>
+                        <li class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100 nav_object"><a href="contacto.html">Contactar</a></li>
+                        <li class=" border-dotted border-b-2 mx-3 max-[470px]:mx-2 max-[400px]:mx-1 border-orange-100 nav_object"><a href="carta.html">Carta</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="flex flex-col h-screen justify-center items-center">
-                <div><h1 class="px-10 text-center text-orange-100 text-8xl mb-5">Contacto</h1></div>
+                <div><h1 class="px-10 text-center text-orange-100 text-8xl mb-5 max-[460px]:text-5xl">Contacto</h1></div>
             </div>
             
         </header>
 
 
-        <section class="py-24 px-40 flex justify-evenly items-start text-orange-100 flex-wrap">
+        <section class="py-24 max-[1000px]:px-10 max-[700px]:px-4 px-40 flex justify-evenly items-start text-orange-100 flex-wrap">
 
             <div>
-                <h2 class="text-3xl text-cyan-800 font-bold border-b-2 border-dashed border-cyan-900 mb-5">Mandanos un mensaje</h2>
+                <h2 class="text-3xl text-cyan-800 font-bold border-b-2 border-dashed border-cyan-900 mb-5 max-[335px]:text-2xl">Mandanos un mensaje</h2>
                 <form action="" class="flex flex-col text-cyan-800 font-bold">
                     <label for="">Titulo</label>
-                    <input class="border-2 h-10 w-80 border-cyan-900 bg-white pl-3" type="text">
+                    <input class="border-2 h-10 w-80 border-cyan-900 bg-white pl-3 max-[335px]:w-64" type="text">
 
                     <label for="">Nombre</label>
-                    <input class="border-2 h-10 w-80 border-cyan-900 bg-white pl-3" type="text">
+                    <input class="border-2 h-10 w-80 border-cyan-900 bg-white pl-3 max-[335px]:w-64" type="text">
 
                     <label for="">Apellidos</label>
-                    <input class="border-2 h-10 w-80 border-cyan-900 bg-white pl-3" type="text">
+                    <input class="border-2 h-10 w-80 border-cyan-900 bg-white pl-3 max-[335px]:w-64" type="text">
 
                     <label for="">Correo</label>
-                    <input class="border-2 h-10 w-80 border-cyan-900 bg-white pl-3" type="text">
+                    <input class="border-2 h-10 w-80 border-cyan-900 bg-white pl-3 max-[335px]:w-64" type="text">
 
                     <label for="">Comentario</label>
-                    <textarea class="border-2 border-cyan-900 bg-white pl-3 pt-2" name="" id="" cols="30" rows="10"></textarea>
+                    <textarea class="border-2 border-cyan-900 bg-white pl-3 pt-2 max-[335px]:w-64" name="" id="" cols="30" rows="10"></textarea>
 
                     <input class="mt-6 border-2 h-14 text-lg" type="submit" value="Enviar">
                 </form>
@@ -74,7 +75,7 @@
 
 
 
-            <div class="text-cyan-800">
+            <div class="text-cyan-800 max-[587px]:mt-10">
                 <div>
                     <h3 class="text-2xl text-cyan-800 font-bold border-b-2 border-dashed border-cyan-900 mb-5 w-fit" style="margin-bottom: 6px;">Telefono</h3>
                     <p class="text-xl font-bold">(506) 2663 5164</p>
@@ -98,16 +99,16 @@
                 </div>
 
 
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7842.176181934238!2d-85.4342365!3d10.650264400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f75633442f015ff%3A0x3474eb287d04d20a!2sNazareth%2C%20Provincia%20de%20Guanacaste%2C%20Liberia!5e0!3m2!1ses!2scr!4v1676591657990!5m2!1ses!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                
             </div>
 
         </section>
+        <div>
+                    <iframe class="max-[600px]:w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7842.176181934238!2d-85.4342365!3d10.650264400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f75633442f015ff%3A0x3474eb287d04d20a!2sNazareth%2C%20Provincia%20de%20Guanacaste%2C%20Liberia!5e0!3m2!1ses!2scr!4v1676591657990!5m2!1ses!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
         
-        
-        <footer class="text-orange-100 bg-black flex justify-evenly px-4 py-10 flex-wrap xl:px-72">
-            <div class="mx-2">
+        <footer class="text-orange-100 bg-black flex justify-evenly px-4 py-10 flex-wrap xl:px-72 sm:w-auto max-[320px]:justify-start">
+            <div class="mx-2 mb-10 w-5/12 sm:w-auto">
                 <h3 class="text-2xl font-bold mb-3">ACERCA DE</h3>
                 <ul class="pl-2">
                     <li>El acuerdo real</li>
@@ -117,7 +118,7 @@
                     <li>Mercancias</li>
                 </ul>
             </div>
-            <div class="mx-2">
+            <div class="mx-2 mb-10 sm:mb-2 w-5/12 sm:w-auto">
                 <h3 class="text-2xl font-bold mb-3">MENUS</h3>
                 <ul class="pl-2">
                     <li>Almuerzo</li>
@@ -127,7 +128,7 @@
                     <li>Niños</li>
                 </ul>
             </div>
-            <div class="mx-2">
+            <div class="mx-2 sm:mb-2 w-5/12 sm:w-auto">
                 <h3 class="text-2xl font-bold mb-3">CONTACTO</h3>
                 <ul class="pl-2">
                     <li>Cuartos privados</li>
@@ -136,13 +137,13 @@
                     <li>Contactenos</li>
                 </ul>
             </div>
-            <div class="mx-2">
-                <div>
+            <div class="mx-2 sm:mb-2 sm:mb-2 w-5/12 sm:w-auto max-[300px]:w-6/12">
+                <div class="max-[320px]:mt-8">
                     <h3 class="text-2xl font-bold mb-3">LLAMENOS</h3>
                     (506) 2663 5164
                 </div>
                 <br>
-                <div>
+                <div class="w-32">
                     <h3 class="text-2xl font-bold mb-3">SIGANOS</h3> 
                     <ul class="flex justify-between items-center">
                         <li><img class="w-7" src="img/img_index/facebook.png" alt=""></li>
